@@ -184,15 +184,15 @@ int main(int argc, char * argv[]) try
 
     //variable to iterate through rgb_frame and depth_frame sequences
     int i=0;
-    const string s = "/home/aldoum/Documents/frame_";
+    const string s = "/home/user/Documents/frame_";
     const string s1 = ".png";
 
-    const string cl =  "/home/aldoum/Documents/p_cloud__";
-    const string clf =  "/home/aldoum/Documents/p_cloud_filtered_";
-    const string clf2 =  "/home/aldoum/Documents/p_cloud_filtered_both_";
-    const string clf_no_f = "/home/aldoum/Documents/p_cloud_no_filter_";
+    const string cl =  "/home/user/Documents/p_cloud__";
+    const string clf =  "/home/user/Documents/p_cloud_filtered_";
+    const string clf2 =  "/home/user/Documents/p_cloud_filtered_both_";
+    const string clf_no_f = "/home/user/Documents/p_cloud_no_filter_";
     string num;
-    const string pcd =  "/home/aldoum/Documents/cloud_";
+    const string pcd =  "/home/user/Documents/cloud_";
     const string cl1 = ".pcd";
     const string cl2 = ".ply";
     //-----------------------------------------------------------------------------------------------------------------------------------
