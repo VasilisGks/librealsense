@@ -248,18 +248,6 @@ int main(int argc, char * argv[]) try
         const string clf2_ply = clf2+i_s+cl2;
         const string clf_no_f_ply = clf_no_f+i_s+cl2;
 
-         //points.export_to_ply("/home/aldoum/Documents/cloud3.ply", color);
-         //points.export_to_ply(cl_ply.c_str(), color);
-         
-         //export filtered pointcloud (spatial filter)
-    //     points_spat.export_to_ply(clf_ply.c_str(), color);
-         
-         //export filtered pointcloud (spatial + temporal filter)
-    //     points_both.export_to_ply(clf2_ply.c_str(), color);
-         
-        //no filter
-    //    points.export_to_ply(clf_no_f_ply.c_str(), color);
-
          //export RGB frame
          stbi_write_png(s2.c_str(), rgb_frame.get_width(), rgb_frame.get_height(),
                rgb_frame.get_bytes_per_pixel(), rgb_frame.get_data(), rgb_frame.get_stride_in_bytes());
@@ -278,7 +266,7 @@ int main(int argc, char * argv[]) try
          pcl::io::savePCDFileASCII(cl2_ply.c_str(), * raw_points); 
          //stbi_write_png("/home/aldoum/Documents/a.png", rgb_frame.get_width(), rgb_frame.get_height(),
            //    rgb_frame.get_bytes_per_pixel(), rgb_frame.get_data(), rgb_frame.get_stride_in_bytes());
-         //Same thing for rgb via OpenCV
+         //Processing via OpenCV
          //cv::Mat dMat_colored = cv::Mat(cv::Size(1920, 1080), CV_8UC3, (void*)rgb_frame.get_data());
          //cv::imwrite( "/home/aldoum/Documents/coloredC3.png", dMat_colored);
     }
